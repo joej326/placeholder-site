@@ -1,0 +1,51 @@
+
+.main-body {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/images/placeholder-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .headers {
+        opacity: 0;
+        animation: headerEntrance 1s forwards ease-out;
+        animation-delay: 2s;
+        background-color: rgba(white, 0.8);
+        padding: 2vw;
+        border: solid black 0.25vw;
+        border-radius: 2vw;
+
+        & h1 {
+            font-size: 4vw;            
+        }
+        & h2 {
+            font-size: 3vw;            
+        }
+        & h3 {
+            font-size: 2.5vw;
+            font-style: italic;
+            margin: 0.5vw 0;
+        }
+    }
+
+}
+
+
+@keyframes headerEntrance {
+    0% {
+        transform: translateY(0vw);
+        opacity: 0
+    }
+    50% {
+        transform: translateY(2vw);
+    }
+    100% {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+}
+  
