@@ -51,4 +51,10 @@
         opacity: 1;
     }
 }
+
+@media (max-width:500px){
+    .main-body {
+        background-image: url(../assets/images/mobile-background.jpg);
+    }
+}
   
