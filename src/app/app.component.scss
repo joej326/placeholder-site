@@ -33,6 +33,34 @@
         & h4 {
             font-size: 1.5vw;
         }
+        & h5 {
+            font-size: 3vw;
+            margin: 3vw;
+        }
+
+        & .projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .project {
+                height: 15vw;
+                width: 25vw;
+                margin: 3vw;                
+                border: solid black 0.2vw;
+                border-radius: 0.2vw;
+                cursor: pointer;
+            }
+
+            & .proj-1 {
+                background-image: url(../assets/images/peets-thumbnail.png);
+                background-size: contain;
+            }
+            & .proj-2 {
+                background-image: url(../assets/images/davis-thumbnail.png);
+                background-size: contain;
+            }
+        }
     }
 
 }
@@ -55,6 +83,34 @@
 @media (max-width:500px){
     .main-body {
         background-image: url(../assets/images/mobile-background.jpg);
+
+        .headers {
+            padding: 20vh 0vw;
+
+            & h1 {
+                font-size: 8vw;
+            }
+            & h2 {
+                font-size: 6vw;
+            }
+            & h3 {
+                font-size: 6vw;
+                margin-bottom: 5vw;
+            }
+            & h4 {
+                font-size: 6vw;
+            }
+
+            & .projects {
+
+                & .project {
+                    width: 40vw;
+                    height: 25vw;
+                }
+            }
+        }
     }
+
+    
 }
   
